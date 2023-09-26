@@ -1,4 +1,11 @@
 import type { Metadata } from 'next';
+import { DM_Sans } from 'next/font/google';
+
+const fontDisplay = DM_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-display',
+})
 
 import '@/styles/globals.scss';
 
@@ -13,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fontDisplay.variable}`}>
       <body>{children}</body>
     </html>
   )
