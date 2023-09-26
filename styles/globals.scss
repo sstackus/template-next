@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700;9..40,800&display=swap');
+
+@layer base {
+  html {
+    @apply font-body;
+    font-size: 16px;
+    color: #161519;
+    background-color: #fff;
+    height: 100%;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  .title {
+    @apply text-5xl font-display font-extrabold;
+  }
+}
